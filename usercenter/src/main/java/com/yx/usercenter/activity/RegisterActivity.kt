@@ -17,8 +17,7 @@ class RegisterActivity : BaseMvpActivity<RegisiterPresenter>(),RegisiterView {
         mPresenter = RegisiterPresenter()
         mPresenter.mView = this
         btn_register.setOnClickListener {
-            Toast.makeText(this,"注册",Toast.LENGTH_LONG).show();
-            mPresenter.regisiter();
+            mPresenter.regisiter("","","")
         }
     }
 }
