@@ -8,7 +8,7 @@ import io.reactivex.disposables.Disposable
  */
 abstract class BaseObserver<T>() : Observer<T> {
     abstract fun success(data: T)
-    abstract fun failure(msg: String)
+    fun failure(msg: String){}
 
     override fun onSubscribe(d: Disposable) {
 

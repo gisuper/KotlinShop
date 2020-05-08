@@ -13,16 +13,12 @@ open class RegisiterPresenter : BasePresenter<RegisiterView>() {
 
         val regisiterServiceImpl = RegisiterServiceImpl()
 
-
-        val subscribe = regisiterServiceImpl.regisiter(phone, verifyCode, pwd)
+        regisiterServiceImpl.regisiter(phone, verifyCode, pwd)
             .compose(NetworkScheduler.compose())
             .subscribe(object : BaseObserver<Boolean>() {
                 override fun success(data: Boolean) {
-                }
 
-                override fun failure(msg: String) {
                 }
-
             })
 
 
