@@ -17,7 +17,8 @@ class RegisterActivity : BaseMvpActivity<RegisiterPresenter>(),RegisiterView {
         mPresenter = RegisiterPresenter()
         mPresenter.mView = this
         btn_register.setOnClickListener {
-            mPresenter.regisiter("","","")
+            mPresenter.regisiter(et_input_phone.text.toString(),et_input_verify_code.text.toString()
+                ,et_input_password.text.toString())
         }
     }
 }

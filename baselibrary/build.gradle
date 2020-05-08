@@ -31,8 +31,29 @@ dependencies {
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     api 'androidx.appcompat:appcompat:1.0.2'
     api 'androidx.core:core-ktx:1.0.2'
+    //rx
     api "io.reactivex.rxjava2:rxkotlin:$rxkotlin_version"
     api "io.reactivex.rxjava2:rxandroid:$rxandroid_version"
+
+    //Retrofit
+    api "com.squareup.okhttp3:okhttp:${okhttp_version}"
+    api "com.squareup.retrofit2:retrofit:${retrofit_version}"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.4.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:${okhttp_version}"
+    implementation "com.squareup.retrofit2:converter-gson:${retrofit_version}"
+
+
+
+    api "com.alibaba:fastjson:${fastjson_version}"
+
+
+
+
+
+
+
+
+
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
