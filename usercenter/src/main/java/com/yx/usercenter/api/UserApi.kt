@@ -19,7 +19,7 @@ interface UserApi {
 
     @POST("user/loginByPhone")
     @FormUrlEncoded
-    abstract fun loginByPhone(
+    fun loginByPhone(
         @Field("account") account: String,
         @Field("password") password: String,
         @Field("regPlatForm") regPlatForm: String

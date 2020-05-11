@@ -6,6 +6,6 @@ import io.reactivex.Observable
 /**
  * Created by yangxiong on 2020/5/8.
  */
-interface RegisterService {
+interface RegisiterService {
     fun regisiter(phone:String,verifyCode:String,pwd:String): Observable<LoginUserEntity>
 }

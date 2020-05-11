@@ -1,9 +1,9 @@
 package com.yx.baselibrary.ui.activity
 
-import androidx.appcompat.app.AppCompatActivity
+import dagger.android.support.DaggerAppCompatActivity
 
 /**
  * Created by yangxiong on 2020/5/7.
  */
-open class BaseActivity : AppCompatActivity() {
+open class BaseActivity : DaggerAppCompatActivity() {
 }

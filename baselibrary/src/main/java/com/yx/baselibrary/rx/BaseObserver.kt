@@ -21,7 +21,7 @@ abstract class BaseObserver<T>() : Observer<T> {
         if (t is BaseJson){
 
             if (!t.isSuccess){
-                Log.e("yangxiong","code : ${t.error.code},message : ${t.error.message}")
+                Log.e("yangxiong","code : ${t.error?.code},message : ${t.error?.message}")
             }
         }
 

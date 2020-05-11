@@ -31,3 +31,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     api project(path: ':baselibrary')//依赖可以传递
 }
+repositories {
+    mavenCentral()
+}
